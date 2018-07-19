@@ -1,11 +1,11 @@
 # 写一个汉诺塔程序
 #      函数(次数, 从哪里来, 到哪里去, 辅助)
-def hanoi(timesOfMove , nameOffrom, to, helper):
-    if timesOfMove == 1:
-        print(nameOffrom + '->' + to)
+def hanoi(搬运个数 , 从哪来, 到哪去, 帮助):
+    if 搬运个数 == 1:
+        print(从哪来 + '->' + 到哪去)
     else:
-        hanoi(timesOfMove - 1, nameOffrom, helper, to)
-        print(nameOffrom + '->' + to)
-        hanoi(timesOfMove - 1, helper, to, nameOffrom)
+        hanoi(搬运个数 - 1, 从哪来, 帮助, 到哪去)
+        print(从哪来 + '->' + 到哪去)
+        hanoi(搬运个数 - 1, 帮助, 到哪去, 从哪来)
 
 hanoi(2, 'A', 'B','C')
