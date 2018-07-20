@@ -9,4 +9,4 @@ def hanoi(搬运个数 , 从哪来, 到哪去, 帮助):
         hanoi(搬运个数 - 1, 帮助, 到哪去, 从哪来)
 
 hanoi(2, 'A', 'B','C')
-# lalla
+# lalla lalla
